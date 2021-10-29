@@ -1,3 +1,7 @@
+/* General Section */
+:root {
+    --back-btn: #4A4A4A;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +10,37 @@
 html {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
 }
-body {
+.flex-container {
+    display: flex;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+/* /General Section */
+
+/* Body Section */
+body.flex-container {
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     background-color: #000000;
     border: 1px solid red;
 }
-body.flex-container {
-    flex-direction: column;
+.body-container {
+    justify-content: space-between;
 }
-.flex-container {
-    display: flex;
+
+/* View Section */
+.view {
+    border: 2px solid blue;
+    width: 100%;
+    height: 2em;
+    justify-content: flex-end;
 }
 a,
 a:hover,
@@ -26,23 +49,35 @@ a:active {
     text-decoration: none;
     color: #ffffff;
 }
-
-/* View Section */
-.view {
-    border: 2px solid blue;
-    width: 100%;
-    justify-content: flex-end;
-}
 .view-btn {
-    color: #ffffff;
     padding: 0.1em 0.3em;
     border-radius: 4px;
-    background-color: #4A4A4A;
+    background-color: var(--back-btn);
     margin: 0.3em 0.4em;
     font-size: 0.8em;
 }
 /* /View Section */
 
 /* Meeting Section */
-
+.meeting.flex-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: calc(100vh - 100px -2em);
+}
+.user-status {
+    bottom: 0;
+    left: 0;
+}
+.user-name {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 /* /Meeting Section */
+
+/* Nav-Bar Section */
+.nav-bar {
+    height: 100px;
+    background-color: #222222;
+}
+/* /Nav-Bar Section */
+/* /Body Section */
