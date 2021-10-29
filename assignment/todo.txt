@@ -1,0 +1,4 @@
+1) Ultimo bottone nav
+2) Rinchiudere primi due bottoni (Mute e Stop Video) in un'unico contenitore
+3) Justify-content: space-between nel container nav-bar
+4) Position fixed + margin-top (probabilmente) alla nav 
