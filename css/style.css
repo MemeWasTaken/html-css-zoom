@@ -5,13 +5,44 @@
 }
 html {
     font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     width: 100%;
     height: 100vh;
+    background-color: #000000;
+    border: 1px solid red;
+}
+body.flex-container {
+    flex-direction: column;
 }
 .flex-container {
     display: flex;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
 
+/* View Section */
+.view {
+    border: 2px solid blue;
+    width: 100%;
+    justify-content: flex-end;
+}
+.view-btn {
+    color: #ffffff;
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    background-color: #4A4A4A;
+    margin: 0.3em 0.4em;
+    font-size: 0.8em;
+}
+/* /View Section */
 
+/* Meeting Section */
+
+/* /Meeting Section */
