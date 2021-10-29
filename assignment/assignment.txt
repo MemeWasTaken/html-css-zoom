@@ -1,0 +1,5 @@
+Exercise: Zoom Meeting
+repository: html-css-zoom
+
+Riproduciamo la schermata Zoom in allegato utilizzando dove possibile flex, senza dimenticare le altre regole studiate fino ad ora :faccia_leggermente_sorridente:
+Per il comportamento “adattivo” fate riferimento a quanto visto assieme durante l’analisi.
