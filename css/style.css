@@ -85,7 +85,7 @@ a:active {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 2em;
-    /* height: calc(100vh - 92px); */
+    margin-bottom: 60px;
     width: 100%;
 }
 
@@ -107,12 +107,21 @@ a:active {
 
 /* Nav-Bar Section */
 .nav-bar {
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #222222;
     width: 100%;
     height: 60px;
     padding-left: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+div.btns-container {
+    width: 160px;
+}
+.micro-btn {
+    display: inline-block;
 }
 .icons {
     display: block;
@@ -134,6 +143,12 @@ a:active {
 }
 .fas.fa-record-vinyl {
     color: #BF0E0E;
+}
+.stop {
+    color: #FF0000;
+    font-size: 0.8em;
+    background-color: var(--back-btn);
+    padding: 21px;
 }
 /* /Nav-Bar Section */
 /* /Body Section */
